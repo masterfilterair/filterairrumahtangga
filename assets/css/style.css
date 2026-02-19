@@ -1,0 +1,555 @@
+/* ======================
+   GLOBAL
+====================== */
+body {
+  padding-top: 70px; /* tinggi navbar fixed */
+}
+
+/* ======================
+   NAVBAR
+====================== */
+.navbar {
+  min-height: 70px; /* KUNCI TINGGI NAVBAR */
+}
+
+.navbar-dark .nav-link {
+  color: rgba(255,255,255,0.85);
+}
+
+.navbar-dark .nav-link:hover {
+  color: #ffffff;
+}
+
+.btn-success {
+  font-weight: 600;
+}
+
+/* ======================
+   HERO SECTION
+====================== */
+#hero {
+  min-height: 100vh;
+  background: url('../img/hero-filter-air.webp') center center / cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.hero-overlay {
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+}
+
+.hero-title {
+  color: #fff;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.hero-text {
+  color: #f1f1f1;
+  font-size: 1.1rem;
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE HERO */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+  }
+}
+
+/* NAVBAR CUSTOM */
+.navbar-custom {
+  background-color: #1E3163;
+}
+
+.navbar-custom .nav-link {
+  color: rgba(255,255,255,0.9);
+}
+
+.navbar-custom .nav-link:hover {
+  color: #ffffff;
+}
+
+.navbar-custom .btn-success {
+  background-color: #006144;
+  border-color: #ffffff;
+}
+
+/* ======================
+   SECTION MASALAH AIR
+====================== */
+#masalah-air {
+  background-color: #ffffff;
+}
+
+.section-title {
+  color: #0d4d8b;
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+.fw-bold {
+  color: #0d4d8b;
+  font-size: 2.2rem;
+}
+
+.section-subtitle {
+  color: #555;
+  max-width: 720px;
+  margin: 10px auto 0;
+  font-size: 1rem;
+}
+
+.problem-card {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 30px 25px;
+  text-align: center;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.problem-card:hover {
+  box-shadow: 0 10px 25px rgba(13, 77, 139, 0.15);
+  transform: translateY(-5px);
+}
+
+.problem-icon {
+  font-size: 40px;
+  color: #0d4d8b;
+  margin-bottom: 20px;
+}
+
+.problem-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.problem-card p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE MASALAH AIR */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
+
+/* ======================
+   BUTTON PRIMARY
+====================== */
+.btn-primary {
+  background-color: #006144;
+  border-color: #ffffff;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #093a69;
+  border-color: #093a69;
+}
+
+/* ======================
+   SOLUSI & KEUNGGULAN
+====================== */
+#solusi-keunggulan {
+  background-color: #f8fbff;
+}
+
+.solution-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 30px 25px;
+  height: 100%;
+  border: 1px solid #e3edf8;
+  transition: all 0.3s ease;
+}
+
+.solution-card:hover {
+  box-shadow: 0 12px 28px rgba(13, 77, 139, 0.18);
+  transform: translateY(-6px);
+}
+
+.solution-icon {
+  font-size: 42px;
+  color: #0d4d8b;
+  margin-bottom: 20px;
+}
+
+.solution-card h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #0d4d8b;
+  margin-bottom: 10px;
+}
+
+.solution-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ======================
+   PRODUK UNGGULAN
+====================== */
+#produk-unggulan {
+  background-color: #ffffff;
+}
+
+.product-card {
+  background: #ffffff;
+  border: 1px solid #e3edf8;
+  border-radius: 14px;
+  padding: 25px;
+  height: 100%;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 12px 30px rgba(13, 77, 139, 0.2);
+  transform: translateY(-6px);
+}
+
+.product-img {
+  max-height: 180px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.product-card h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #0d4d8b;
+  margin-bottom: 15px;
+}
+
+.product-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.product-card ul li {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.product-card ul li::before {
+  content: "✓";
+  color: #0d4d8b;
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+/* ======================
+   TESTIMONI
+====================== */
+#testimoni {
+  background-color: #f8fbff;
+}
+
+.testimonial-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px 25px;
+  height: 100%;
+  text-align: center;
+  border: 1px solid #e3edf8;
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  box-shadow: 0 12px 28px rgba(13, 77, 139, 0.2);
+  transform: translateY(-6px);
+}
+
+.testimonial-img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 3px solid #0d4d8b;
+}
+
+.testimonial-text {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.testimonial-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #0d4d8b;
+}
+
+.testimonial-location {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* ======================
+   WHATSAPP FLOATING
+====================== */
+.wa-float {
+  position: fixed;
+  width: 56px;
+  height: 56px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #006144;
+  color: #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 28px;
+  line-height: 56px;
+  box-shadow: 0 8px 20px rgba(13, 77, 139, 0.4);
+  z-index: 9999;
+  transition: all 0.3s ease;
+}
+
+.wa-float:hover {
+  background-color: #093a69;
+  transform: scale(1.08);
+}
+
+/* ======================
+   FOOTER
+====================== */
+.site-footer {
+  background: #1E3163;
+  color: #ffffff;
+  padding: 60px 0 20px;
+}
+
+.footer-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.footer-text {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-top: 10px;
+}
+
+.footer-title {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.footer-list,
+.footer-contact,
+.footer-legal {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li,
+.footer-contact li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.footer-list a,
+.footer-contact a,
+.footer-legal a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-list a:hover,
+.footer-contact a:hover,
+.footer-legal a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.2);
+  margin-top: 30px;
+  padding-top: 15px;
+}
+
+.footer-legal {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .footer-legal {
+    margin-top: 10px;
+  }
+}
+
+.brand-text {
+  font-size: 1.1rem;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+/* FOOTER LOGO */
+.footer-logo {
+  max-width: 270px;
+  height: auto;
+}
+
+@media (max-width: 576px) {
+  .footer-logo {
+    max-width: 140px;
+    margin-bottom: 10px;
+  }
+}
+
+.footer-social {
+  display: flex;
+  gap: 12px;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-social a {
+  color: #ffffff;
+  font-size: 18px;
+  transition: opacity 0.3s ease;
+}
+
+.footer-social a:hover {
+  opacity: 0.75;
+}
+
+.footer-title {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 18px;
+}
+
+.footer-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background-color: rgba(255,255,255,0.6);
+  border-radius: 2px;
+}
+
+.product-img {
+  max-height: 180px;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* BRAND TEXT */
+.brand-text {
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
+/* =========================
+   PRODUCT CARD IMAGE FIX
+========================= */
+
+.product-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  height: 100%;
+  box-shadow: 0 10px 25px rgba(0,0,0,.05);
+  display: flex;
+  flex-direction: column;
+}
+
+/* WRAPPER GAMBAR */
+.product-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: contain;
+  object-position: center;
+  background: #f8f9fa;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  transition: transform .3s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.02);
+}
+
+@media (max-width: 576px) {
+  .product-card img {
+    height: 200px;
+  }
+}
+
+/* FAQ */
+section h3.h6 {
+  background: linear-gradient(90deg, #0d4d8b, #1e3163);
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-top: 28px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(13,110,253,.2);
+}
+
+/* NAVIGATOR */
+.breadcrumb-wrapper {
+  background: #f8f9fa;
+  padding: 10px 0;
+  margin-bottom: 24px;
+}
+
+.breadcrumb {
+  margin-bottom: 0;
+  background: transparent;
+  font-size: 14px;
+}
+
+.breadcrumb a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+  color: #6c757d;
+}
+
+.single-product-img img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: contain;
+}
