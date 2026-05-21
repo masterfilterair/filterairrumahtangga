@@ -5,6 +5,11 @@ body {
   padding-top: 70px; /* tinggi navbar fixed */
 }
 
+.page-title{
+min-height:220px;
+padding-top:100px!important;
+}
+
 /* ======================
    NAVBAR
 ====================== */
